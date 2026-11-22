@@ -1,0 +1,619 @@
+ @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Basic&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Alexandria", sans-serif;
+}
+.cont-head{
+    width: 100%;
+    background:url(head.png) center center/cover no-repeat;
+}
+header{
+    width: 100%;
+    padding: 25px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    
+}
+
+.logo-head {
+    display: flex;
+    align-items: center;
+}
+.logo-head h1{
+    font-size: 1.8em;
+    font-weight: 800;
+}
+.logo-head span{
+    color: orangered;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.logo-head img {
+    width: 60px;
+}
+
+
+nav a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: brown;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color:orange;
+    text-shadow: 0 0 10px orange;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: orange;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 80%;
+}
+
+/*قسم ال contant*/
+.contant-head{
+    padding: 50px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.contant-head h2{
+    font-size: 4.5em;
+    font-weight: 800;
+}
+.contant-head span{
+    color: orangered;
+    font-size: 1.3em;
+    font-weight: 800;
+}
+.contant-head h3{
+    font-size: 1.6em;
+    padding-bottom: 10px;
+}
+.contant-head p{
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-bottom: 25px;
+}
+
+.contant-head img{
+    width: 500px;
+    
+}
+/*الزراير*/
+.buttons-head {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contant-head .one,
+.contant-head .tow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: 0.35s ease;
+    cursor: pointer;
+}
+
+/* First Button */
+.contant-head .one {
+    background: linear-gradient(135deg, #ff8c00, #ff5500);
+    color: white;
+    border: 2px solid transparent;
+    box-shadow: 0 5px 15px rgba(255, 100, 0, 0.25);
+}
+
+.contant-head .one:hover {
+    background: white;
+    color: #ff6500;
+    border-color: #ff6500;
+    box-shadow: 0 8px 22px rgba(255, 100, 0, 0.3);
+    transform: scale(1.1);
+}
+
+/* Second Button */
+.contant-head .tow {
+    background: white;
+    color: #292929;
+    border: 2px solid rgb(238, 70, 9 ,0.5);
+}
+
+.contant-head .tow:hover {
+    background: #ff6900;
+    color: white;
+    border-color: #ff6900;
+    box-shadow: 0 8px 20px rgba(255, 100, 0, 0.25);
+      transform: scale(1.1);
+}
+
+
+
+
+
+.features {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    padding:0 40px;
+    background: #fff9f6;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.feature {
+    flex: 0 0 155px;
+    position: relative;
+    z-index: 2;
+    padding: 5px;
+}
+
+.feature:not(:last-of-type) {
+    border-right: 1px solid #ff6500;
+}
+
+.feature i {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.feature h3 {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.feature p {
+    font-size: 13px;
+    margin: 0;
+    color: #777;
+}
+
+.down {
+    position: absolute;
+    left: 54%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    z-index: 3;
+    background: white;
+    color: #222;
+    padding: 13px;
+    border-radius: 25px;
+    font-size: 17px;
+    transition: .3s;
+}
+
+.down:hover {
+    background: #ff6500;
+    color: white;
+    transform: translateX(-50%) scale(1.1);
+}
+
+/*NEW SEC2*/
+.sec2{
+  
+    width: 100%;
+    background:url(main.png) center center/cover no-repeat;
+    border-top:5px solid  #ff6500 ;
+    border-bottom:5px solid  #ff6500 ;
+}
+.kl-sec2{
+    padding:100px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.kl-sec2 h2{
+    font-size: 2em;
+    font-weight: 800;
+}
+.kl-sec2 span{
+    color: orangered;
+    font-size: 1.3em;
+    font-weight: 800;
+}
+.kl-sec2 .img-sec2 img{
+    width: 500px;
+}
+.cont-sec2{
+    right: 90px;
+}
+
+
+.cont-sec2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-p {
+    padding-bottom: 25px;
+    line-height: 1.8;
+}
+
+.details-sec2 p {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.details-sec2 i {
+    background: linear-gradient( #ff6500);
+    color: white;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    flex-shrink: 0;
+    box-shadow: 0 0 10px #ff650055;
+}
+
+
+
+/*بدايه السيكشن 3*/
+.sec3{
+    width: 100%;
+    margin-top: 100px;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+} 
+
+.kl-sec3 {
+    width: 85%;
+    height: 650px;
+    background-color: burlywood;
+    margin-bottom: 100px;
+    border-radius: 25px;
+    border: 1px solid #eeeeee;
+
+    box-shadow: 
+        0 8px 20px rgba(206, 30, 30, 0.12),
+        0 2px 40px rgba(204, 161, 19, 0.8);
+}
+
+.title-sec3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    
+
+}
+
+.title-sec3 h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.title-sec3 h2::before,
+.title-sec3 h2::after {
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #ff6900;
+    border-radius: 10px;
+}
+
+.title-sec3 h3 {
+    font-size: 17px;
+    font-weight: normal;
+    margin-top: -10px;
+    padding-bottom: 25px
+}
+
+
+
+
+/* ===== Cards Container ===== */
+
+.cont-sec3 {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* ===== All Cards ===== */
+
+.card1-sec3,
+.card2-sec3,
+.card3-sec3,
+.card4-sec3 {
+
+    width: 230px;
+    min-height: 480px;
+    padding: 20px;
+
+    background-color: white;
+
+    border-radius: 20px;
+    border: 1px solid #eeeeee;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+
+    text-align: center;
+
+    transition: 0.3s ease;
+
+    /* ترتيب محتويات الكارت */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+
+/* ===== Card Hover ===== */
+
+.card1-sec3:hover,
+.card2-sec3:hover,
+.card3-sec3:hover,
+.card4-sec3:hover {
+
+      box-shadow:
+        0 0 10px #FF6900,
+        0 0 25px rgba(255, 105, 0, 0.7),
+        0 0 45px rgba(255, 105, 0, 0.4);
+
+    border: 1px solid #FF6900;
+
+    transform: scale(0.98);
+    
+}
+
+
+/* ===== Phone Images ===== */
+
+.img-sec3 {
+    width: 130px;
+    height: 150px;
+
+    object-fit: contain;
+
+    margin-bottom: 10px;
+}
+
+
+/* ===== Phone Name ===== */
+
+.card1-sec3 h2,
+.card2-sec3 h2,
+.card3-sec3 h2,
+.card4-sec3 h2 {
+
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* ===== Price ===== */
+
+.Price {
+    color: #FF6900;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    margin: 12px 0;
+}
+
+
+/* ===== Storage Capacity ===== */
+
+.Capacity {
+    font-size: 16px;
+    color: #777777;
+
+    margin-bottom: 15px;
+}
+
+
+/* ===== Phone Features ===== */
+
+.card1-sec3 p,
+.card2-sec3 p,
+.card3-sec3 p,
+.card4-sec3 p {
+
+    font-size: 14px;
+    color: #555555;
+
+    margin: 12px 0;
+}
+
+
+/* ===== Buy Button ===== */
+
+.button {
+    display: inline-block;
+
+    margin-top: auto;
+    margin-bottom: 5px;
+
+    padding: 12px 30px;
+
+    background-color: #FF6900;
+    color: white;
+
+    text-decoration: none;
+
+    border: 2px solid #FF6900;
+    border-radius: 25px;
+
+    transition: 0.3s ease;
+}
+
+
+/* ===== Button Hover ===== */
+
+.button:hover {
+    background-color: white;
+    color: #FF6900;
+
+    border: 2px solid #FF6900;
+}
+
+
+/* ===== Responsive ===== */
+
+@media (max-width: 600px) {
+
+    .cont-sec3 {
+        width: 95%;
+        gap: 20px;
+    }
+
+    .card1-sec3,
+    .card2-sec3,
+    .card3-sec3,
+    .card4-sec3 {
+        width: 100%;
+        max-width: 280px;
+    }
+
+}
+
+/*بدايه قسم الفوتر */
+footer{
+    width: 100%;
+    background:url(footer.png) center center/cover no-repeat;
+    border-top: #ff5500 solid 3px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 50px;
+}
+
+/* Footer Links */
+.footer-links {
+    padding: 0 35px;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    position: relative;
+}
+
+.footer-links h2 {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.footer-links h3 {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 18px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-links h3:hover {
+    color: #ff9b45;
+    transform: translateX(5px);
+}
+
+/* Apple Title */
+.footer-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-title h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-title img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Social Icons */
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 23px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #ff963d;
+    transform: translateY(-5px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
